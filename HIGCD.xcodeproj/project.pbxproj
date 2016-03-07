@@ -13,6 +13,10 @@
 		550BB5881C8D6AC000EB0A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550BB5861C8D6AC000EB0A99 /* Main.storyboard */; };
 		550BB58A1C8D6AC000EB0A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550BB5891C8D6AC000EB0A99 /* Assets.xcassets */; };
 		550BB58D1C8D6AC000EB0A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550BB58B1C8D6AC000EB0A99 /* LaunchScreen.storyboard */; };
+		550BB5981C8D6B0400EB0A99 /* HIGCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 550BB5971C8D6B0400EB0A99 /* HIGCDQueue.m */; };
+		550BB59B1C8D6B2C00EB0A99 /* HIGCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 550BB59A1C8D6B2C00EB0A99 /* HIGCDGroup.m */; };
+		550BB59E1C8D6B3D00EB0A99 /* HIGCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 550BB59D1C8D6B3D00EB0A99 /* HIGCDSemaphore.m */; };
+		550BB5A11C8D6B4900EB0A99 /* HIGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 550BB5A01C8D6B4900EB0A99 /* HIGCDTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		550BB5891C8D6AC000EB0A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		550BB58C1C8D6AC000EB0A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		550BB58E1C8D6AC000EB0A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550BB5961C8D6B0400EB0A99 /* HIGCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIGCDQueue.h; sourceTree = "<group>"; };
+		550BB5971C8D6B0400EB0A99 /* HIGCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIGCDQueue.m; sourceTree = "<group>"; };
+		550BB5991C8D6B2C00EB0A99 /* HIGCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIGCDGroup.h; sourceTree = "<group>"; };
+		550BB59A1C8D6B2C00EB0A99 /* HIGCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIGCDGroup.m; sourceTree = "<group>"; };
+		550BB59C1C8D6B3D00EB0A99 /* HIGCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIGCDSemaphore.h; sourceTree = "<group>"; };
+		550BB59D1C8D6B3D00EB0A99 /* HIGCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIGCDSemaphore.m; sourceTree = "<group>"; };
+		550BB59F1C8D6B4900EB0A99 /* HIGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIGCDTimer.h; sourceTree = "<group>"; };
+		550BB5A01C8D6B4900EB0A99 /* HIGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIGCDTimer.m; sourceTree = "<group>"; };
+		550BB5A31C8D87DC00EB0A99 /* HIGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIGCD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +71,8 @@
 		550BB57C1C8D6AC000EB0A99 /* HIGCD */ = {
 			isa = PBXGroup;
 			children = (
-				550BB5801C8D6AC000EB0A99 /* AppDelegate.h */,
-				550BB5811C8D6AC000EB0A99 /* AppDelegate.m */,
-				550BB5831C8D6AC000EB0A99 /* ViewController.h */,
-				550BB5841C8D6AC000EB0A99 /* ViewController.m */,
-				550BB5861C8D6AC000EB0A99 /* Main.storyboard */,
-				550BB5891C8D6AC000EB0A99 /* Assets.xcassets */,
-				550BB58B1C8D6AC000EB0A99 /* LaunchScreen.storyboard */,
-				550BB58E1C8D6AC000EB0A99 /* Info.plist */,
+				550BB5951C8D6AD500EB0A99 /* AppDelegate */,
+				550BB5941C8D6AC500EB0A99 /* HIGCD */,
 				550BB57D1C8D6AC000EB0A99 /* Supporting Files */,
 			);
 			path = HIGCD;
@@ -77,6 +84,37 @@
 				550BB57E1C8D6AC000EB0A99 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		550BB5941C8D6AC500EB0A99 /* HIGCD */ = {
+			isa = PBXGroup;
+			children = (
+				550BB5A31C8D87DC00EB0A99 /* HIGCD.h */,
+				550BB5961C8D6B0400EB0A99 /* HIGCDQueue.h */,
+				550BB5971C8D6B0400EB0A99 /* HIGCDQueue.m */,
+				550BB5991C8D6B2C00EB0A99 /* HIGCDGroup.h */,
+				550BB59A1C8D6B2C00EB0A99 /* HIGCDGroup.m */,
+				550BB59C1C8D6B3D00EB0A99 /* HIGCDSemaphore.h */,
+				550BB59D1C8D6B3D00EB0A99 /* HIGCDSemaphore.m */,
+				550BB59F1C8D6B4900EB0A99 /* HIGCDTimer.h */,
+				550BB5A01C8D6B4900EB0A99 /* HIGCDTimer.m */,
+			);
+			name = HIGCD;
+			sourceTree = "<group>";
+		};
+		550BB5951C8D6AD500EB0A99 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				550BB5801C8D6AC000EB0A99 /* AppDelegate.h */,
+				550BB5811C8D6AC000EB0A99 /* AppDelegate.m */,
+				550BB5831C8D6AC000EB0A99 /* ViewController.h */,
+				550BB5841C8D6AC000EB0A99 /* ViewController.m */,
+				550BB5861C8D6AC000EB0A99 /* Main.storyboard */,
+				550BB5891C8D6AC000EB0A99 /* Assets.xcassets */,
+				550BB58B1C8D6AC000EB0A99 /* LaunchScreen.storyboard */,
+				550BB58E1C8D6AC000EB0A99 /* Info.plist */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550BB59E1C8D6B3D00EB0A99 /* HIGCDSemaphore.m in Sources */,
 				550BB5851C8D6AC000EB0A99 /* ViewController.m in Sources */,
+				550BB5A11C8D6B4900EB0A99 /* HIGCDTimer.m in Sources */,
 				550BB5821C8D6AC000EB0A99 /* AppDelegate.m in Sources */,
+				550BB59B1C8D6B2C00EB0A99 /* HIGCDGroup.m in Sources */,
 				550BB57F1C8D6AC000EB0A99 /* main.m in Sources */,
+				550BB5981C8D6B0400EB0A99 /* HIGCDQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +341,7 @@
 				550BB5931C8D6AC000EB0A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
